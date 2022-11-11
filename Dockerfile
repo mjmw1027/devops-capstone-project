@@ -15,7 +15,7 @@ USER theia
 
 # 9. expose port 8080 + statemens
 EXPOSE 8080
-cmd ["gunicorn", "--bind=0.0.0.0:8080", "--log-level=info", "service:app"]
+CMD ["gunicorn", "--bind=0.0.0.0:8080", "--log-level=info", "service:app"]
 
 
 
